@@ -1,12 +1,14 @@
 # Postmark
 
-[![Build Status](https://travis-ci.org/keighl/postmark.png?branch=master)](https://travis-ci.org/keighl/postmark) [![Go Report Card](https://goreportcard.com/badge/github.com/keighl/postmark)](https://goreportcard.com/report/github.com/keighl/postmark)  [![codecov.io](https://codecov.io/github/keighl/postmark/coverage.svg?branch=master)](https://codecov.io/github/keighl/postmark?branch=master) [![GoDoc](https://godoc.org/github.com/keighl/postmark?status.svg)](https://godoc.org/github.com/keighl/postmark)
+[![Build Status](https://travis-ci.org/phillipCouto/postmark.png?branch=master)](https://travis-ci.org/phillipCouto/postmark) [![Go Report Card](https://goreportcard.com/badge/github.com/phillipCouto/postmark)](https://goreportcard.com/report/github.com/phillipCouto/postmark)  [![codecov.io](https://codecov.io/github/phillipCouto/postmark/coverage.svg?branch=master)](https://codecov.io/github/phillipCouto/postmark?branch=master) [![GoDoc](https://pkg.go.dev/github.com/phillipCouto/postmark?status.svg)](https://godoc.org/github.com/phillipCouto/postmark)
 
-A Golang package for the using Postmark API.
+A Golang package for the using Postmark API. Was originally maintained by `github.com/keighl/postmark` but due to 
+lack of activity and support I will try to maintain the project more consistently to allow for continued
+alignment with the Postmark API.
 
 ### Installation
 
-    go get -u github.com/keighl/postmark
+    go get -u github.com/phillipCouto/postmark
 
 ### Basic Usage
 
@@ -14,7 +16,7 @@ Grab your [`Server Token`](https://account.postmarkapp.com/servers/XXXX/credenti
 
 ```go
 import (
-    "github.com/keighl/postmark"
+    "github.com/phillipCouto/postmark"
 )
 
 client := postmark.NewClient("[SERVER-TOKEN]", "[ACCOUNT-TOKEN]")
